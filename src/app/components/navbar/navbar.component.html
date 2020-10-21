@@ -1,0 +1,13 @@
+<nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/home">Peliculas</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0"></ul>
+            <div class="d-flex">
+                <input #txtBuscar class="form-control mr-2" type="search" placeholder="Buscar película" aria-label="Search" (keyup.enter)="buscarPelicula(txtBuscar.value)">
+                <button class="btn btn-outline-success" type="submit" (click)="buscarPelicula( txtBuscar.value)">Buscar</button>
+            </div>
+        </div>
+    </div>
+</nav>
